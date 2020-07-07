@@ -2,6 +2,7 @@
  * YOUR CODE HERE *
  ******************/
 
+// using for of loop
 const onlyOdds = function (numbers) {
   const odds = [];
 
@@ -14,6 +15,7 @@ const onlyOdds = function (numbers) {
   return odds;
 }
 
+// using standard for loop
 const onlyEvens = function (numbers) {
   const evens = [];
 
@@ -51,7 +53,7 @@ const dNames = function (names) {
 }
 
 // Using .startsWith instead of the above index check.
-// Allows for `for of` loop.
+// And for of loop.
 const dNamesAlt = function (names) {
   const newNames = [];
 
