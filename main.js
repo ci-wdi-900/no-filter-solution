@@ -41,6 +41,20 @@ const shortNamesOnly = function (names) {
 const dNames = function (names) {
   const newNames = [];
 
+  for (let i = 0; i < names.length; i++) {
+    if (names[i][0] === 'D') {
+      newNames.push(names[i]);
+    }
+  }
+
+  return newNames;
+}
+
+// Using .startsWith instead of the above index check.
+// Allows for `for of` loop.
+const dNamesAlt = function (names) {
+  const newNames = [];
+
   for (const name of names) {
     if (name.startsWith('D')) {
       newNames.push(name);
