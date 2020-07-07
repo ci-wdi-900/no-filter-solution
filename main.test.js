@@ -51,39 +51,39 @@ describe('shortNamesOnly', () => {
     const names1 = [
       'Colin',
       'Mesuara',
-      'Bogdan',
-      'David',
-      'Patrick',
+      'Chase',
+      'Dallas',
+      'Crystal',
       'Marc',
-      'Michael',
+      'Miley',
       'Sharod',
     ];
 
     const shortNames1 = [
       'Colin',
-      'Bogdan',
-      'David',
+      'Chase',
+      'Dallas',
       'Marc',
+      'Miley',
       'Sharod',
     ];
 
     const names2 = [
       'LaToddra',
       'Deaundre',
-      'Denis',
-      'Tyrell',
-      'Wilson',
+      'Daniel',
       'Carlos',
+      'Francis',
+      'Prem',
       'Jumary',
     ];
 
     const shortNames2 = [
-      'Denis',
-      'Tyrell',
-      'Wilson',
+      'Daniel',
       'Carlos',
+      'Prem',
       'Jumary',
-    ];
+    ]
 
 
     expect(shortNamesOnly(names1)).toEqual(shortNames1);
@@ -91,45 +91,45 @@ describe('shortNamesOnly', () => {
   })
 
   it(`does not modify the original array`, () => {
-    const names1 = [
-      'Colin',
-      'Mesuara',
-      'Bogdan',
-      'David',
-      'Patrick',
-      'Marc',
-      'Michael',
-      'Sharod',
-    ];
-
     const original1 = [
       'Colin',
       'Mesuara',
-      'Bogdan',
-      'David',
-      'Patrick',
+      'Chase',
+      'Dallas',
+      'Crystal',
       'Marc',
-      'Michael',
+      'Miley',
+      'Sharod',
+    ];
+
+    const original2 = [
+      'LaToddra',
+      'Deaundre',
+      'Daniel',
+      'Carlos',
+      'Francis',
+      'Prem',
+      'Jumary',
+    ];
+
+    const names1 = [
+      'Colin',
+      'Mesuara',
+      'Chase',
+      'Dallas',
+      'Crystal',
+      'Marc',
+      'Miley',
       'Sharod',
     ];
 
     const names2 = [
       'LaToddra',
       'Deaundre',
-      'Denis',
+      'Daniel',
       'Carlos',
-      'Tyrell',
-      'Wilson',
-      'Jumary',
-    ];
-
-    const original2 = [
-      'LaToddra',
-      'Deaundre',
-      'Denis',
-      'Carlos',
-      'Tyrell',
-      'Wilson',
+      'Francis',
+      'Prem',
       'Jumary',
     ];
 
@@ -145,31 +145,31 @@ describe('dNames', () => {
     const names1 = [
       'Colin',
       'Mesuara',
-      'Bogdan',
-      'David',
-      'Patrick',
+      'Chase',
+      'Dallas',
+      'Crystal',
       'Marc',
-      'Michael',
+      'Miley',
       'Sharod',
     ];
 
     const dNames1 = [
-      'David',
+      'Dallas',
     ];
 
     const names2 = [
       'LaToddra',
       'Deaundre',
-      'Denis',
+      'Daniel',
       'Carlos',
-      'Tyrell',
-      'Wilson',
+      'Francis',
+      'Prem',
       'Jumary',
     ];
 
     const dNames2 = [
       'Deaundre',
-      'Denis',
+      'Daniel',
     ];
     
     expect(dNames(names1)).toEqual(dNames1);
@@ -177,45 +177,45 @@ describe('dNames', () => {
   });
 
   it(`does not modify the original array`, () => {
-    const names1 = [
-      'Colin',
-      'Mesuara',
-      'Bogdan',
-      'David',
-      'Patrick',
-      'Marc',
-      'Michael',
-      'Sharod',
-    ];
-
     const original1 = [
       'Colin',
       'Mesuara',
-      'Bogdan',
-      'David',
-      'Patrick',
+      'Chase',
+      'Dallas',
+      'Crystal',
       'Marc',
-      'Michael',
+      'Miley',
+      'Sharod',
+    ];
+
+    const original2 = [
+      'LaToddra',
+      'Deaundre',
+      'Daniel',
+      'Carlos',
+      'Francis',
+      'Prem',
+      'Jumary',
+    ];
+
+    const names1 = [
+      'Colin',
+      'Mesuara',
+      'Chase',
+      'Dallas',
+      'Crystal',
+      'Marc',
+      'Miley',
       'Sharod',
     ];
 
     const names2 = [
       'LaToddra',
       'Deaundre',
-      'Denis',
+      'Daniel',
       'Carlos',
-      'Tyrell',
-      'Wilson',
-      'Jumary',
-    ];
-
-    const original2 = [
-      'LaToddra',
-      'Deaundre',
-      'Denis',
-      'Carlos',
-      'Tyrell',
-      'Wilson',
+      'Francis',
+      'Prem',
       'Jumary',
     ];
 
@@ -224,5 +224,4 @@ describe('dNames', () => {
     expect(names1).toEqual(original1);
     expect(names2).toEqual(original2);
   });
-
 });
