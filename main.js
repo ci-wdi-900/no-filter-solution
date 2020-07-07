@@ -2,19 +2,19 @@
  * YOUR CODE HERE *
  ******************/
 
-function onlyOdds(numbers) {
+const onlyOdds = function (numbers) {
   const odds = [];
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 1) {
-      odds.push(numbers[i]);
+  for (const num of numbers) {
+    if (num % 2 === 1) {
+      odds.push(num);
     }
   }
 
   return odds;
 }
 
-function onlyEvens(numbers) {
+const onlyEvens = function (numbers) {
   const evens = [];
 
   for (let i = 0; i < numbers.length; i++) {
@@ -26,24 +26,24 @@ function onlyEvens(numbers) {
   return evens;
 }
 
-function shortNamesOnly(names) {
+const shortNamesOnly = function (names) {
   const shortOnes = [];
 
-  for (let i = 0; i < names.length; i++) {
-    if (names[i].length < 7) {
-      shortOnes.push(names[i]);
+  for (const currentName of names) {
+    if (currentName.length < 7) {
+      shortOnes.push(currentName);
     }
   }
 
   return shortOnes;
 }
 
-function dNames(names) {
+const dNames = function (names) {
   const newNames = [];
 
-  for (let i = 0; i < names.length; i++) {
-    if (names[i].startsWith('D')) {
-      newNames.push(names[i]);
+  for (const name of names) {
+    if (name.startsWith('D')) {
+      newNames.push(name);
     }
   }
 
