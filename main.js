@@ -6,9 +6,9 @@
 const onlyOdds = function (numbers) {
   const odds = [];
 
-  for (const num of numbers) {
-    if (num % 2 === 1) {
-      odds.push(num);
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 1) {
+      odds.push(numbers[i]);
     }
   }
 
@@ -31,7 +31,8 @@ const onlyEvens = function (numbers) {
 const shortNamesOnly = function (names) {
   const shortOnes = [];
 
-  for (const currentName of names) {
+  for (let i = 0; i < names.length; i++) {
+    const currentName = names[i];
     if (currentName.length < 7) {
       shortOnes.push(currentName);
     }
@@ -44,8 +45,9 @@ const sNames = function (names) {
   const newNames = [];
 
   for (let i = 0; i < names.length; i++) {
-    if (names[i][0] === 'S') {
-      newNames.push(names[i]);
+    const currentName = names[i];
+    if (currentName[0] === 'S') {
+      newNames.push(currentName);
     }
   }
 
@@ -57,7 +59,8 @@ const sNames = function (names) {
 const sNamesAlt = function (names) {
   const newNames = [];
 
-  for (const name of names) {
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i];
     if (name.startsWith('S')) {
       newNames.push(name);
     }
