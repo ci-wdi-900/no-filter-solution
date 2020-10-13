@@ -40,11 +40,11 @@ const shortNamesOnly = function (names) {
   return shortOnes;
 }
 
-const dNames = function (names) {
+const sNames = function (names) {
   const newNames = [];
 
   for (let i = 0; i < names.length; i++) {
-    if (names[i][0] === 'D') {
+    if (names[i][0] === 'S') {
       newNames.push(names[i]);
     }
   }
@@ -54,11 +54,11 @@ const dNames = function (names) {
 
 // Using .startsWith instead of the above index check.
 // And for of loop.
-const dNamesAlt = function (names) {
+const sNamesAlt = function (names) {
   const newNames = [];
 
   for (const name of names) {
-    if (name.startsWith('D')) {
+    if (name.startsWith('S')) {
       newNames.push(name);
     }
   }
@@ -84,8 +84,8 @@ if (typeof shortNamesOnly === 'undefined') {
   shortNamesOnly = undefined;
 }
 
-if (typeof dNames === 'undefined') {
-  dNames = undefined;
+if (typeof sNames === 'undefined') {
+  sNames = undefined;
 }
 
 
@@ -93,5 +93,5 @@ module.exports = {
   onlyOdds,
   onlyEvens,
   shortNamesOnly,
-  dNames,
+  sNames,
 }
